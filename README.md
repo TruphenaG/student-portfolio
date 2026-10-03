@@ -10,8 +10,8 @@ GitHub Pages: https://truphenag.github.io/student-portfolio/
 
 ## Projects
 
-1. **Study Planner** — add assignments, due dates, and priorities; mark tasks complete; filter tasks; save tasks locally in the browser. [Source](projects/study-planner/) · [Demo](https://truphenag.github.io/student-portfolio/projects/study-planner/)
-2. **Grade Calculator** — calculate weighted percentage averages with input validation. [Source](projects/grade-calculator/) · [Demo](https://truphenag.github.io/student-portfolio/projects/grade-calculator/)
+1. **Study Planner** — add assignments, due dates, and priorities; mark tasks complete; filter tasks; undo an accidental removal; save tasks locally in the browser. [Source](projects/study-planner/) · [Demo](https://truphenag.github.io/student-portfolio/projects/study-planner/)
+2. **Grade Calculator** — calculate weighted percentage averages with input validation and an assignment-by-assignment breakdown. [Source](projects/grade-calculator/) · [Demo](https://truphenag.github.io/student-portfolio/projects/grade-calculator/)
 3. **Personal Portfolio** — semantic HTML, responsive CSS, keyboard navigation, and a custom favicon. [Source](index.html) · [Website](https://truphenag.github.io/student-portfolio/)
 
 ## Run locally
@@ -39,4 +39,17 @@ In this repository, open **Settings → Pages**, choose **Deploy from a branch**
 - The planner uses browser local storage only. It does not sync across devices or send task data to a server. Clearing site data removes saved tasks.
 - The calculator does not save entries and does not assign letter grades. It requires scores and weights from 0–100 and a total weight of 100%.
 - No analytics, external fonts, or tracking scripts are included.
-- The course video “Github Setup.mov” was not supplied, so its exact steps could not be checked. Deployment follows GitHub's documented Pages workflow.
+
+## Try the projects
+
+- **Planner:** Add a task with a due date, reload the page to check that it stays saved, mark it complete, and use the filters. Remove the task and choose **Undo removal** to restore it.
+- **Calculator:** Choose **Try an example** to see 90 at 40% and 80 at 60% produce 84%. Change a weight so the total is not 100% to see the validation message. The result table shows each score’s contribution.
+
+## Project structure
+
+```text
+index.html                     Portfolio content and navigation
+styles.css                     Shared responsive styles
+projects/study-planner/         Planner page and browser-storage logic
+projects/grade-calculator/      Calculator page, UI, and calculation module
+```

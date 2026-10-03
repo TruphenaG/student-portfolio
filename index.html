@@ -1,54 +1,183 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Truphena Chelsea Getugi’s student portfolio: developing digital skills through practical web projects.">
-  <meta name="theme-color" content="#172b36">
-  <title>Truphena Chelsea Getugi · Student Portfolio</title>
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23172b36'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-family='Georgia' font-size='38' fill='%23c7f17a'%3ET%3C/text%3E%3C/svg%3E">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header wrap">
-    <a class="wordmark" href="./" aria-label="Truphena Chelsea Getugi, home"><span class="monogram">T.</span><span>Truphena C. Getugi</span></a>
-    <nav aria-label="Main navigation"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a class="nav-github" href="https://github.com/TruphenaG">GitHub</a></nav>
-  </header>
-  <main id="main">
-    <section class="hero wrap" id="about" aria-labelledby="intro-heading">
-      <div class="hero-copy">
-        <p class="eyebrow">Student &amp; curious learner</p>
-        <h1 id="intro-heading">Truphena<br>Chelsea <em>Getugi.</em></h1>
-        <p class="statement">I’m Truphena Chelsea Getugi, a student developing practical digital skills through hands-on learning and thoughtful projects.</p>
-        <a class="button" href="#projects">Explore my projects</a>
-      </div>
-      <aside class="intro-note" aria-label="Portfolio introduction">
-        <span class="note-index">01 / A work in progress</span>
-        <p>Small projects.<br>Practical skills.<br><em>Room to grow.</em></p>
-        <div class="note-rule"></div>
-        <span class="note-caption">Exploring how simple web tools<br>can make student life easier.</span>
-      </aside>
-    </section>
-    <section class="skills-section" id="skills" aria-labelledby="skills-heading">
-      <div class="wrap skills-layout">
-        <div><p class="eyebrow">01 / Skills</p><h2 id="skills-heading">Learning by <br><em>doing.</em></h2><p class="section-intro">The foundations I’m developing through the practice projects below.</p></div>
-        <div class="skill-list">
-          <article class="skill-row"><span class="skill-number">01</span><div><h3>Web foundations</h3><p>Structuring pages, styling layouts, and building simple interactions.</p><ul class="tags" aria-label="Web skills"><li>HTML</li><li>CSS</li><li>JavaScript basics</li></ul></div></article>
-          <article class="skill-row"><span class="skill-number">02</span><div><h3>Digital project workflow</h3><p>Organizing source files, documenting projects, and sharing work online.</p><ul class="tags" aria-label="Workflow skills"><li>GitHub</li><li>Project documentation</li><li>Web publishing</li></ul></div></article>
-          <article class="skill-row"><span class="skill-number">03</span><div><h3>Practical problem solving</h3><p>Breaking an idea into steps and checking that a tool works as intended.</p><ul class="tags" aria-label="Problem solving skills"><li>Task planning</li><li>Input validation</li><li>Usability checks</li></ul></div></article>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Truphena Chelsea Getugi’s student portfolio: developing digital skills through practical web projects.">
+    <meta name="theme-color" content="#172b36">
+    <title>Truphena Chelsea Getugi · Student Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23172b36'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-family='Georgia' font-size='38' fill='%23c7f17a'%3ET%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header wrap">
+      <a class="wordmark" href="./" aria-label="Truphena Chelsea Getugi, home">
+        <span class="monogram">T.</span>
+        <span>Truphena C. Getugi</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a class="nav-github" href="https://github.com/TruphenaG">GitHub</a>
+      </nav>
+    </header>
+    <main id="main" tabindex="-1">
+      <section class="hero wrap" id="about" aria-labelledby="intro-heading">
+        <div class="hero-copy">
+          <p class="eyebrow">Student portfolio</p>
+          <h1 id="intro-heading">Truphena<br>Chelsea <em>Getugi.</em>
+          </h1>
+          <p class="statement">I’m Truphena Chelsea Getugi, a student learning web development by building practical tools for student life.</p>
+          <a class="button" href="#projects">Explore my projects</a>
         </div>
+        <aside class="intro-note" aria-labelledby="toolkit-heading">
+          <span class="note-index">The student toolkit</span>
+          <h2 id="toolkit-heading">A little less<br>
+            <em>to keep track of.</em>
+          </h2>
+          <p class="note-caption">Two tools for the everyday details of being a student.</p>
+          <a class="toolkit-link" href="projects/study-planner/">
+            <span class="toolkit-number">01</span>
+            <span>
+              <strong>Study Planner</strong>
+              <span>Keep assignments in one place.</span>
+            </span>
+          </a>
+          <a class="toolkit-link" href="projects/grade-calculator/">
+            <span class="toolkit-number">02</span>
+            <span>
+              <strong>Grade Calculator</strong>
+              <span>See how each score adds up.</span>
+            </span>
+          </a>
+        </aside>
+      </section>
+      <section class="skills-section" id="skills" aria-labelledby="skills-heading">
+        <div class="wrap skills-layout">
+          <div>
+            <p class="eyebrow">01 / Skills</p>
+            <h2 id="skills-heading">Skills I’m <br>
+              <em>building.</em>
+            </h2>
+            <p class="section-intro">The foundations behind the projects on this page.</p>
+          </div>
+          <div class="skill-list">
+            <article class="skill-row">
+              <span class="skill-number">01</span>
+              <div>
+                <h3>Web foundations</h3>
+                <p>Structuring pages, styling layouts, and building simple interactions.</p>
+                <ul class="tags" aria-label="Web skills">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript basics</li>
+                </ul>
+              </div>
+            </article>
+            <article class="skill-row">
+              <span class="skill-number">02</span>
+              <div>
+                <h3>Digital project workflow</h3>
+                <p>Organizing source files, documenting projects, and sharing work online.</p>
+                <ul class="tags" aria-label="Workflow skills">
+                  <li>GitHub</li>
+                  <li>Project documentation</li>
+                  <li>Web publishing</li>
+                </ul>
+              </div>
+            </article>
+            <article class="skill-row">
+              <span class="skill-number">03</span>
+              <div>
+                <h3>Practical problem solving</h3>
+                <p>Breaking an idea into steps and checking that a tool works as intended.</p>
+                <ul class="tags" aria-label="Problem solving skills">
+                  <li>Task planning</li>
+                  <li>Input validation</li>
+                  <li>Usability checks</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="projects-section wrap" id="projects" aria-labelledby="projects-heading">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">02 / Projects</p>
+            <h2 id="projects-heading">Selected <em>projects.</em>
+            </h2>
+          </div>
+          <p class="section-intro">Practical projects for student life, with live demos and source code.</p>
+        </div>
+        <div class="project-list">
+          <article class="project">
+            <div class="project-number">01</div>
+            <div class="project-content">
+              <p class="project-type">Organization / JavaScript</p>
+              <h3>Study Planner</h3>
+              <p>Keep track of assignments, due dates, and priorities; check off finished work; and undo an accidental removal. Tasks stay saved in the same browser between visits.</p>
+              <ul class="tags">
+                <li>JavaScript</li>
+                <li>Forms</li>
+                <li>Local storage</li>
+              </ul>
+            </div>
+            <div class="project-actions">
+              <a class="button secondary" href="projects/study-planner/">Try the planner</a>
+              <a class="text-link" aria-label="View Study Planner source code" href="https://github.com/TruphenaG/student-portfolio/tree/main/projects/study-planner">View source code</a>
+            </div>
+          </article>
+          <article class="project">
+            <div class="project-number">02</div>
+            <div class="project-content">
+              <p class="project-type">Calculation / JavaScript</p>
+              <h3>Grade Calculator</h3>
+              <p>Combine assignment scores and course weights into one average. Try the built-in example, then enter your own scores and see each assignment’s contribution.</p>
+              <ul class="tags">
+                <li>JavaScript</li>
+                <li>Math logic</li>
+                <li>Input validation</li>
+              </ul>
+            </div>
+            <div class="project-actions">
+              <a class="button secondary" href="projects/grade-calculator/">Try the calculator</a>
+              <a class="text-link" aria-label="View Grade Calculator source code" href="https://github.com/TruphenaG/student-portfolio/tree/main/projects/grade-calculator">View source code</a>
+            </div>
+          </article>
+          <article class="project">
+            <div class="project-number">03</div>
+            <div class="project-content">
+              <p class="project-type">Web design / HTML &amp; CSS</p>
+              <h3>Personal Portfolio</h3>
+              <p>A home for my introduction, developing skills, and projects, built to work on phones and larger screens with clear navigation and keyboard-friendly controls.</p>
+              <ul class="tags">
+                <li>HTML &amp; CSS</li>
+                <li>Responsive design</li>
+                <li>GitHub Pages</li>
+              </ul>
+            </div>
+            <div class="project-actions">
+              <a class="button secondary" href="#about">Explore this site</a>
+              <a class="text-link" aria-label="View Personal Portfolio source code" href="https://github.com/TruphenaG/student-portfolio">View source code</a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <div>
+          <a class="wordmark" href="#about">
+            <span class="monogram">T.</span>
+            <span>Truphena Chelsea Getugi</span>
+          </a>
+          <p>Student portfolio · TruphenaG on GitHub</p>
+        </div>
+        <a class="text-link" href="https://github.com/TruphenaG">Find me on GitHub</a>
       </div>
-    </section>
-    <section class="projects-section wrap" id="projects" aria-labelledby="projects-heading">
-      <div class="section-header"><div><p class="eyebrow">02 / Projects</p><h2 id="projects-heading">Ideas put <br><em>into practice.</em></h2></div><p class="section-intro">Three small web projects, with working examples and source code to explore.</p></div>
-      <div class="project-list">
-        <article class="project"><div class="project-number">01</div><div class="project-content"><p class="project-type">Organization / Practice project</p><h3>Study Planner</h3><p>A simple place to organize assignments, set due dates, and mark work complete. Tasks stay saved in the same browser between visits.</p><ul class="tags"><li>JavaScript</li><li>Forms</li><li>Local storage</li></ul></div><div class="project-actions"><a class="button secondary" href="projects/study-planner/">Try the planner</a><a class="text-link" href="https://github.com/TruphenaG/student-portfolio/tree/main/projects/study-planner">View source code</a></div></article>
-        <article class="project"><div class="project-number">02</div><div class="project-content"><p class="project-type">Calculation / Practice project</p><h3>Grade Calculator</h3><p>A weighted-average calculator that combines assignment scores and weights. Clear input checks help explain how each result is calculated.</p><ul class="tags"><li>JavaScript</li><li>Math logic</li><li>Input validation</li></ul></div><div class="project-actions"><a class="button secondary" href="projects/grade-calculator/">Try the calculator</a><a class="text-link" href="https://github.com/TruphenaG/student-portfolio/tree/main/projects/grade-calculator">View source code</a></div></article>
-        <article class="project"><div class="project-number">03</div><div class="project-content"><p class="project-type">Web design / Portfolio project</p><h3>Personal Portfolio</h3><p>This responsive website brings together my introduction, developing skills, and practice projects in one accessible place.</p><ul class="tags"><li>HTML &amp; CSS</li><li>Responsive design</li><li>GitHub Pages</li></ul></div><div class="project-actions"><a class="button secondary" href="#about">Explore this site</a><a class="text-link" href="https://github.com/TruphenaG/student-portfolio">View source code</a></div></article>
-      </div>
-    </section>
-  </main>
-  <footer class="site-footer"><div class="wrap footer-inner"><div><a class="wordmark" href="#about"><span class="monogram">T.</span><span>Truphena Chelsea Getugi</span></a><p>Learning, building, and taking the next step.</p></div><a class="text-link" href="https://github.com/TruphenaG">Find me on GitHub</a></div></footer>
-</body>
+    </footer>
+  </body>
 </html>
