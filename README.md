@@ -1,6 +1,6 @@
 # Truphena Chelsea Getugi — Student Portfolio
 
-A responsive personal portfolio with a one-sentence introduction, a developing-skills section, and three projects with source links.
+A responsive personal portfolio for Truphena Chelsea Getugi, a Business Analytics and Information Technology (BAIT) student at Rutgers Business School. It includes a one-sentence introduction for recruiters, developing skills in analytics and technology, and three projects with live demos and source links.
 
 ## Website
 
