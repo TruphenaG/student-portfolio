@@ -1,72 +1,27 @@
-# Truphena Chelsea Getugi — Student Portfolio
+# Truphena C. Getugi — Student Portfolio
 
-A responsive personal portfolio for Truphena Chelsea Getugi, a Business Analytics and Information Technology (BAIT) student at Rutgers Business School. It includes a one-sentence introduction for recruiters, developing skills in analytics and technology, and three projects with live demos and source links.
+I'm a Business Analytics and Information Technology (BAIT) student at Rutgers Business School. This is my portfolio for Building Your Brand. It shares a little about me, the skills I'm learning, and my projects.
 
-## Website
-
-Public repository: https://github.com/TruphenaG/student-portfolio
-
-GitHub Pages: https://truphenag.github.io/student-portfolio/
+[View my portfolio](https://truphenag.github.io/student-portfolio/)
 
 ## Projects
 
-1. **Coursework Planner** — a task dashboard with course labels, add/edit/complete/remove actions, combined search and status filters, deadline and priority sorting, progress metrics, and undo. Records are stored in the browser and older planner records remain compatible. [Source](projects/study-planner/) · [Demo](https://truphenag.github.io/student-portfolio/projects/study-planner/)
-2. **Grade Forecaster** — a weighted course model for actual scores, remaining assessments, predicted outcomes, and target-grade planning. Includes saved drafts, an assessment contribution table, and validation for incomplete or invalid weights. [Source](projects/grade-calculator/) · [Demo](https://truphenag.github.io/student-portfolio/projects/grade-calculator/)
-3. **Personal Portfolio** — responsive HTML and CSS, semantic navigation, accessible forms, and GitHub Pages deployment. [Source](index.html) · [Website](https://truphenag.github.io/student-portfolio/)
+- **[Coursework Planner](https://truphenag.github.io/student-portfolio/projects/study-planner/)** — A tool for keeping track of assignments, due dates, and priorities. You can add tasks, update them, and mark them as complete.
+- **[Grade Forecaster](https://truphenag.github.io/student-portfolio/projects/grade-calculator/)** — A tool for estimating a final course grade and seeing what scores you would need on the remaining work to reach a goal.
+- **Personal Portfolio** — The main website with my introduction, skills, and links to these projects.
 
-## Run locally
+The site uses HTML, CSS, and JavaScript and is hosted on GitHub Pages.
 
-No install or build step is required. From this directory, run:
+## A few notes
+
+The planner and grade forecaster save your entries in the browser you're using. They won't transfer to another device, and clearing the site's saved data will remove them. Grade estimates assume course weights add up to 100% and don't account for extra credit or dropped grades.
+
+## Running the site locally
+
+To try the site on your computer, open a terminal in the project folder and run this command with Python installed:
 
 ```sh
 python3 -m http.server 8000
 ```
 
-Visit http://localhost:8000. A local server is required for the projects’ JavaScript modules.
-
-## Publish with GitHub Pages
-
-In this repository, open **Settings → Pages**, choose **Deploy from a branch**, then **main** and **/ (root)**, and save. The `.nojekyll` file keeps the site as plain static files. All CSS and demo links use relative paths so the site works at the repository URL.
-
-## Customize
-
-- Edit `index.html` for the statement, skill descriptions, and project summaries.
-- Edit `styles.css` for colors, spacing, typography, and responsive layout.
-- Project scripts live in their respective `projects/` folders.
-
-## Privacy and limitations
-
-- Both tools save data in browser local storage only. They do not sync across devices or send entered data to a server. Clearing site data removes saved records.
-- Unreadable saved data is left untouched. The tool shows a warning instead of silently overwriting it.
-- The grade model assumes fixed positive weights totaling 100%, percentage scores from 0–100, and no dropped scores, penalties, or extra credit. Instructor rules determine actual grades.
-- No analytics, external fonts, or tracking scripts are included.
-
-## Try the projects
-
-### Coursework Planner
-
-Choose **Load sample tasks** to explore an example with overdue, due-today, upcoming, and completed assignments. Search by course, filter by status, change the sort order, and edit a task. Remove a task and use **Undo removal**. Reload to check persistence. Sample tasks are labeled and do not replace your existing tasks.
-
-### Grade Forecaster
-
-Choose **Load example**. The completed-work average is **84%**, the projected final grade is **85%**, and reaching a **90%** target requires a **96%** weighted average across the remaining work. Change the target to **95%** to see an unreachable-target result. Clear an expected score: the projection becomes unavailable, while the target calculation still works. Example grades are illustrative, not personal academic results.
-
-## Calculation model
-
-- Earned course points = sum of completed score × weight ÷ 100.
-- Completed-work average = earned points ÷ completed weight × 100.
-- Projected final grade = earned points + predicted contributions from remaining work.
-- Required remaining average = (target − earned points) ÷ remaining weight × 100.
-- Required averages are rounded upward to one decimal place. Calculations use unrounded values.
-
-## Project structure
-
-```text
-index.html                          Portfolio content and navigation
-styles.css                          Shared base and portfolio styles
-projects/workspace.css              Dashboard and forecasting layouts
-projects/study-planner/model.mjs    Record validation, filtering, sorting, metrics
-projects/study-planner/planner.js   Forms, persistence, editing, rendering
-projects/grade-calculator/math.mjs  Weighted-average and forecasting model
-projects/grade-calculator/calculator.js  Forecast forms, storage, results
-```
+Then open http://localhost:8000 in your browser.
